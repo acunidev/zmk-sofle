@@ -164,11 +164,11 @@
 
         ModsNumFkeys {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans       &trans              &trans              &trans              &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp F12      &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &trans    &trans  &kp F11      &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &mt F10 F10  &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans       &trans              &trans              &trans              &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans                &trans               &trans               &trans               &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp F12               &HMR F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8   &HMR F9 KP_NUMBER_9  &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &trans    &trans  &kp F11               &HMR F4 KP_NUMBER_4  &HMR F5 KP_NUMBER_5  &HMR F6 KP_NUMBER_6  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &HMR F10 KP_NUMBER_0  &HMR F1 KP_NUMBER_1  &HMR F2 KP_NUMBER_2  &HMR F3 KP_NUMBER_3  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans                &trans               &trans               &trans               &trans
             >;
 
             label = "ModsNumFkeys";

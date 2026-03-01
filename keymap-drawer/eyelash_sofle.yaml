@@ -372,7 +372,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: F10, h: F10}
+  - {t: KP 0, h: F10}
   - {t: KP 1, h: F1}
   - {t: KP 2, h: F2}
   - {t: KP 3, h: F3}

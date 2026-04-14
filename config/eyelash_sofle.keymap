@@ -63,11 +63,18 @@
         require-prior-idle-ms = <100>;
     };
 
-    tap_dance: tap_dance {
+    tp_guion_bajo: tp_guion_bajo {
         compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE";
+        label = "TP_GUION_BAJO";
         #binding-cells = <0>;
-        bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+        bindings = <&kp MINUS>, <&kp UNDER>;
+    };
+
+    tp_barras: tp_barras {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TP_BARRAS";
+        #binding-cells = <0>;
+        bindings = <&kp BACKSLASH>, <&kp PIPE>;
     };
 
     behaviors {
@@ -210,13 +217,13 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        Usefull {
+        SYMBOLS {
             bindings = <
-&trans  &trans    &trans  &trans      &trans                &trans    &trans  &trans  &trans                 &trans      &trans  &trans  &trans
-&trans  &kp TAB   &trans  &trans      &kp LEFT_BRACKET      &trans    &trans  &trans  &kp RIGHT_BRACKET      &trans      &trans  &trans  &trans
-&trans  &kp CAPS  &trans  &trans      &kp LEFT_PARENTHESIS  &trans    &trans  &trans  &kp RIGHT_PARENTHESIS  &trans      &trans  &trans  &trans
-&trans  &trans    &trans  &tap_dance  &kp LEFT_BRACE        &trans    &trans  &trans  &kp RIGHT_BRACE        &trans      &trans  &trans  &trans
-&trans  &trans    &trans  &trans      &trans                &trans    &trans  &trans  &trans                 &kp DELETE  &trans  &trans
+&trans  &trans    &trans     &trans          &trans                &trans    &trans  &trans  &trans                 &trans            &trans          &trans  &trans
+&trans  &kp TAB   &kp GRAVE  &kp EQUAL       &kp SINGLE_QUOTE      &trans    &trans  &trans  &kp DOUBLE_QUOTES      &kp PLUS          &tp_guion_bajo  &trans  &trans
+&trans  &kp CAPS  &kp LBKT   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans    &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RBKT        &trans  &trans
+&trans  &trans    &trans     &tp_barras      &kp LESS_THAN         &trans    &trans  &trans  &kp LS(GT)             &kp GREATER_THAN  &trans          &trans  &trans
+&trans  &trans    &trans     &trans          &trans                &trans    &trans  &trans  &trans                 &kp DELETE        &trans          &trans
             >;
         };
     };

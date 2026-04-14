@@ -536,7 +536,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
-  - {t: '`', s: '~'}
+  - _
   - {t: '=', s: +}
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -544,7 +544,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '"'
   - +
-  - '&tp_guion_bajo'
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -562,14 +562,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - '&tp_barras'
   - <
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+>
   - '>'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

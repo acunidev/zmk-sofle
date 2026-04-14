@@ -63,9 +63,9 @@
         require-prior-idle-ms = <100>;
     };
 
-    new_behavior: new_behavior {
+    tap_dance: tap_dance {
         compatible = "zmk,behavior-tap-dance";
-        label = "NEW_BEHAVIOR";
+        label = "TAP_DANCE";
         #binding-cells = <0>;
         bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
     };
@@ -212,11 +212,11 @@
 
         Usefull {
             bindings = <
-&trans  &trans    &trans  &trans  &trans                &trans    &trans  &trans  &trans                 &trans      &trans  &trans  &trans
-&trans  &kp TAB   &trans  &trans  &kp LEFT_BRACKET      &trans    &trans  &trans  &kp RIGHT_BRACKET      &trans      &trans  &trans  &trans
-&trans  &kp CAPS  &trans  &trans  &kp LEFT_PARENTHESIS  &trans    &trans  &trans  &kp RIGHT_PARENTHESIS  &trans      &trans  &trans  &trans
-&trans  &trans    &trans  &trans  &kp LEFT_BRACE        &trans    &trans  &trans  &kp RIGHT_BRACE        &trans      &trans  &trans  &trans
-&trans  &trans    &trans  &trans  &trans                &trans    &trans  &trans  &trans                 &kp DELETE  &trans  &trans
+&trans  &trans    &trans  &trans      &trans                &trans    &trans  &trans  &trans                 &trans      &trans  &trans  &trans
+&trans  &kp TAB   &trans  &trans      &kp LEFT_BRACKET      &trans    &trans  &trans  &kp RIGHT_BRACKET      &trans      &trans  &trans  &trans
+&trans  &kp CAPS  &trans  &trans      &kp LEFT_PARENTHESIS  &trans    &trans  &trans  &kp RIGHT_PARENTHESIS  &trans      &trans  &trans  &trans
+&trans  &trans    &trans  &tap_dance  &kp LEFT_BRACE        &trans    &trans  &trans  &kp RIGHT_BRACE        &trans      &trans  &trans  &trans
+&trans  &trans    &trans  &trans      &trans                &trans    &trans  &trans  &trans                 &kp DELETE  &trans  &trans
             >;
         };
     };

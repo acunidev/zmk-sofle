@@ -57,7 +57,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - ModsNumFkeys
-  - MOVS
+  - {t: '$$mdi:keyboard-esc$$', h: MOVS}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOLS}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -588,6 +588,3 @@ layers:
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
-- p: [57, 59]
-  k: $$mdi:keyboard-esc$$
-  l: [QWERTY]
